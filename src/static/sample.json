@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "todo": "Do something nice for someone you care about",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "todo": "Memorize a poem",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "todo": "Watch a classic movie",
+    "completed": true
+  },
+  {
+    "id": 4,
+    "todo": "Watch a documentary",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "todo": "Invest in cryptocurrency",
+    "completed": false
+  }
+]
