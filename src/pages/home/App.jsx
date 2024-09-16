@@ -118,7 +118,7 @@ function App() {
   };
 
   return (
-    <div className="container p-3 max-w-[360px] sm:max-w-[640px] lg:px-6 lg:py-12 mx-auto h-auto bg-white flex items-center flex-col md:border md:gray-600 md:rounded-lg sm:shadow-xl">
+    <div className="container px-1 py-3 max-w-[360px] sm:max-w-[640px] lg:px-6 lg:py-12 mx-auto h-auto bg-white flex items-center flex-col md:border md:gray-600 md:rounded-lg sm:shadow-xl">
       <div>
         <img src="/assets/logo.png" width="120" alt="logo" />
       </div>
@@ -261,7 +261,7 @@ function App() {
                     sx={{
                       marginLeft: '4px',
                       fontFamily: 'Open Sans',
-                      fontSize: 16,
+                      fontWeight: 'bold',
                       textDecorationLine: value.completed ? 'line-through' : 'unset'
                     }}
                   />
