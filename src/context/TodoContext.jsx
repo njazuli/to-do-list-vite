@@ -13,7 +13,7 @@ export const TodoProvider = ({ children }) => {
   const [openExtraDiv, setOpenExtraDiv] = useState(false);
 
   useEffect(() => {
-    // get existing todoList
+    // get existing todoList in localstorage
     const todoList = JSON.parse(localStorage.getItem('todoList'));
 
     if (todoList) {
@@ -23,8 +23,6 @@ export const TodoProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem('todoList', JSON.stringify(todos));
-
-    console.log('testing todos', JSON.stringify(todos, null, 2));
   }, [todos]);
 
   // create todo list once user push the button
@@ -88,7 +86,6 @@ export const TodoProvider = ({ children }) => {
 
   const handleChange = event => {
     setPriority(event.target.value);
-    console.log('testing priority', event.target.value);
   };
 
   const handleDateChange = newDate => {

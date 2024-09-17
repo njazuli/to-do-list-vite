@@ -11,8 +11,9 @@ function App() {
           <img src="/assets/logo.png" width="120" alt="logo" />
         </div>
         <p className="text-black text-2xl mb-2 mt-3">To-do List App 📋</p>
-
+        {/* input section */}
         <TodoInput />
+        {/* list section */}
         <TodoList />
       </div>
     </TodoProvider>

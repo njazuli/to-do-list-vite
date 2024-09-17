@@ -33,6 +33,7 @@ const TodoInput = () => {
 
   return (
     <>
+      {/* main todo input field */}
       <div className="w-full h-auto p-2 lg:p-6 flex items-center ">
         <div className="w-full flex items-center">
           <Box sx={{ width: '100%', maxWidth: '100%' }} onClick={() => setOpenExtraDiv(true)}>
@@ -58,7 +59,7 @@ const TodoInput = () => {
       </div>
       {openExtraDiv && (
         <div className="w-full h-auto p-2 lg:px-6 lg:py-1 flex justify-between items-start">
-          {/* select */}
+          {/* priority */}
           <div className="w-3/6 mr-2">
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">Priority</InputLabel>
@@ -95,8 +96,8 @@ const TodoInput = () => {
               )}
             </FormControl>
           </div>
+          {/* due date */}
           <div className="w-3/6">
-            {/* due date */}
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DatePicker
                 label="Due date"
@@ -105,7 +106,7 @@ const TodoInput = () => {
                 renderInput={params => (
                   <TextField
                     {...params}
-                    error={!!error && !selectedDate} // Add error state
+                    error={!!error && !selectedDate}
                     helperText={error && !selectedDate ? error : ''}
                   />
                 )}
